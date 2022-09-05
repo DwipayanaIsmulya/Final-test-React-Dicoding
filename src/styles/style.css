@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  height: 630px;
+}
+
+.leftContainer {
+  position: absolute;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background-color: aqua;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftContainer img {
+  width: 400px;
+}
+
+.geser {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: 1.2s all;
+}
+
+.hilang {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: 2s all;
+}
+
+.rightContainer {
+  position: absolute;
+  transition: 0.3s all;
+  top: 0;
+  right: 0;
+  color: #fff;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background-color: blueviolet;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rightContainer h1 {
+  font-family: "Roboto";
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+
+.rightContainer button {
+  font-family: "roboto";
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  width: 275px;
+  height: 50px;
+  background-color: #f82873;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===== Setelah Main ===== */
+
+.notesApp__hidden {
+  position: absolute;
+  z-index: -5;
+  top: -900px;
+}
+
+.notesApp {
+  transition: 5s all;
+  font-family: "poppins";
+}
+
+.notes-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notes-input input,
+button {
+  width: 400px;
+  height: 30px;
+  border: 1px solid #242424;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.notes-input button {
+  color: #fff;
+  background-color: #f82873;
+  border: none;
+  cursor: pointer;
+}
+
+.notesList {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.notesItem {
+  background-color: rgb(221, 221, 221);
+  margin: 5px;
+  padding: 10px;
+  width: 300px;
+}
+
+.notesItem button {
+  width: 120px;
+}
